@@ -3,9 +3,6 @@ package org.oop;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.oop.Point.direction;
-import static org.oop.Point.distance;
-
 
 class PointTest {
 
@@ -14,7 +11,7 @@ class PointTest {
         Point origin = new Point(0, 0);
         double expectedDistance = 0;
 
-        double actualDistance = distance(origin, origin);
+        double actualDistance = origin.distance(origin);
 
         Assertions.assertEquals(expectedDistance, actualDistance);
     }
@@ -27,8 +24,8 @@ class PointTest {
         double expectedDistancePoint1 = 1;
         double expectedDistancePoint2 = 1;
 
-        double distancePoint1 = distance(origin, point1);
-        double distancePoint2 = distance(origin, point2);
+        double distancePoint1 = origin.distance(point1);
+        double distancePoint2 = origin.distance(point2);
 
         Assertions.assertEquals(expectedDistancePoint1, distancePoint1);
         Assertions.assertEquals(expectedDistancePoint2, distancePoint2);
@@ -40,7 +37,7 @@ class PointTest {
         Point point2 = new Point(-1, 0);
         double expectedDistance = 2;
 
-        double actualDistance = distance(point1, point2);
+        double actualDistance = point1.distance(point2);
 
         Assertions.assertEquals(expectedDistance, actualDistance);
     }
@@ -53,8 +50,8 @@ class PointTest {
         double expectedDirectionPoint1 = 0;
         double expectedDirectionPoint2 = 0;
 
-        double actualDirectionPoint1 = direction(origin, point1);
-        double actualDirectionPoint2 = direction(origin, point2);
+        double actualDirectionPoint1 = origin.direction(point1);
+        double actualDirectionPoint2 = origin.direction(point2);
 
         Assertions.assertEquals(expectedDirectionPoint1, actualDirectionPoint1);
         Assertions.assertEquals(expectedDirectionPoint2, actualDirectionPoint2);
@@ -68,8 +65,8 @@ class PointTest {
         double expectedDirectionPoint1 = Math.PI;
         double expectedDirectionPoint2 = Math.PI;
 
-        double actualDirectionPoint1 = direction(origin, point1);
-        double actualDirectionPoint2 = direction(origin, point2);
+        double actualDirectionPoint1 = origin.direction(point1);
+        double actualDirectionPoint2 = origin.direction(point2);
 
         Assertions.assertEquals(expectedDirectionPoint1, actualDirectionPoint1);
         Assertions.assertEquals(expectedDirectionPoint2, actualDirectionPoint2);
@@ -83,8 +80,8 @@ class PointTest {
         double expectedDirectionPoint1 = Math.PI / 2;
         double expectedDirectionPoint2 = Math.PI / 2;
 
-        double actualDirectionPoint1 = direction(origin, point1);
-        double actualDirectionPoint2 = direction(origin, point2);
+        double actualDirectionPoint1 = origin.direction(point1);
+        double actualDirectionPoint2 = origin.direction(point2);
 
         Assertions.assertEquals(expectedDirectionPoint1, actualDirectionPoint1);
         Assertions.assertEquals(expectedDirectionPoint2, actualDirectionPoint2);

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.oop.PointTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-01-17T20:46:28" hostname="Gauravs-MacBook-Pro.local" time="0.03">
+<testsuite name="org.oop.PointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-30T03:54:35" hostname="Gauravs-MacBook-Pro.local" time="0.018">
   <properties/>
-  <testcase name="twoPointsWithSameXAndYCoordinatesShouldHaveADistanceOfZero()" classname="org.oop.PointTest" time="0.017"/>
-  <testcase name="distanceBetweenOriginAndPointsOnUnitCircleShouldBeOne()" classname="org.oop.PointTest" time="0.001"/>
-  <testcase name="originAndPointOnNegativeXAxisShouldBePiRadiansAway()" classname="org.oop.PointTest" time="0.005"/>
-  <testcase name="originAndPointOnPositiveXAxisShouldBeZeroRadiansAway()" classname="org.oop.PointTest" time="0.001"/>
-  <testcase name="originAndPointOnYAxisShouldBeHalfPiRadiansAway()" classname="org.oop.PointTest" time="0.0"/>
-  <testcase name="distanceBetweenTwoOppositePointsOnUnitCircleShouldBeTwo()" classname="org.oop.PointTest" time="0.001"/>
+  <testcase name="originAndPointOnYAxisShouldBeHalfPiRadiansAway()" classname="org.oop.PointTest" time="0.018"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
